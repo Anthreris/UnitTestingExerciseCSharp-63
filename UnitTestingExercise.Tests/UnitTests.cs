@@ -9,9 +9,15 @@ namespace UnitTestingExercise.Tests
         [InlineData(2, 3, 5, 10)] //Add test data <-------
         public void AddTest(int num1, int num2, int num3, int expected)
         {
-            //Start Step 3 here:
+            // Start Step 3 here:
+            // Arrange
+            var Calculator = new Calculator();
+            
+            // Act
+            
+            
+            // Assert
 
-            //Arrange
             // create a Calculator object
             
 
