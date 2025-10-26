@@ -6,8 +6,8 @@ namespace UnitTestingExercise.Tests
     public class UnitTests
     {
         [Theory]
-        [InlineData(2, 3, 5, 10)] //Add test data <-------
-        [InlineData(1, 2, 3, 6)] //My test data contributions
+        [InlineData(2, 3, 5, 10)]
+        [InlineData(1, 2, 3, 6)]
         [InlineData(2, 4, 6, 12)]
         [InlineData(2, 2, 2, 6)]
         
@@ -24,25 +24,18 @@ namespace UnitTestingExercise.Tests
             Assert.Equal(expected, actual);
 
             // create a Calculator object
-
-
-            //Act
             // call the Add method that is located in the Calculator class
             // and store its result in a variable named actual
-
-            //Assert
-            //Assert.Equal(expected, actual);
         }
 
         [Theory]
-        [InlineData(1,2,-1)]//Add test data <-------
+        [InlineData(1,2,-1)]
         [InlineData(3,2,1)]
         [InlineData(4,4,0)]
         [InlineData(6,5,1)]
         public void SubtractTest(int minuend, int subtrhend, int expected)
         {
             //Start Step 5 here:
-
             //Arrange
             var Calculator = new Calculator();
 
@@ -55,7 +48,7 @@ namespace UnitTestingExercise.Tests
         }
 
         [Theory]
-        [InlineData(1,1,1)]//Add test data <-------
+        [InlineData(1,1,1)]
         [InlineData(2,2,4)]
         [InlineData(3,2,6)]
         [InlineData(4,5,20)]
@@ -63,7 +56,6 @@ namespace UnitTestingExercise.Tests
         public void MultiplyTest(int num1, int num2, int expected)
         {
             //Start Step 7 here:
-
             //Arrange
             var Calculator = new Calculator();
 
@@ -76,7 +68,7 @@ namespace UnitTestingExercise.Tests
         }
 
         [Theory]
-        [InlineData(1,1,1)]//Add test data <-------
+        [InlineData(1,1,1)]
         [InlineData(2,1,2)]
         [InlineData(30,6,5)]
         [InlineData(20,2,10)]
