@@ -56,6 +56,10 @@ namespace UnitTestingExercise.Tests
 
         [Theory]
         [InlineData(1,1,1)]//Add test data <-------
+        [InlineData(2,2,4)]
+        [InlineData(3,2,6)]
+        [InlineData(4,5,20)]
+        [InlineData(12,12,144)]
         public void MultiplyTest(int num1, int num2, int expected)
         {
             //Start Step 7 here:
@@ -73,6 +77,10 @@ namespace UnitTestingExercise.Tests
 
         [Theory]
         [InlineData(1,1,1)]//Add test data <-------
+        [InlineData(2,1,2)]
+        [InlineData(30,6,5)]
+        [InlineData(20,2,10)]
+        [InlineData(7,7,1)]
         public void DivideTest(int num1, int num2, int expected)
         {
             //Arrange
